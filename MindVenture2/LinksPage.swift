@@ -27,7 +27,7 @@ struct LinksPage: View {
                         RoundedRectangle(cornerRadius: 10)
                                             .stroke(Color.green, lineWidth: 6)
                                     )
-            
+            Spacer()
                 
                 Link(destination: URL(string: "https://www.mayoclinic.org/diseases-conditions/anxiety/symptoms-causes/syc-20350961")!) {
                     Text("Learn more about anxiety.")
@@ -39,17 +39,31 @@ struct LinksPage: View {
                 }
                 Link(destination: URL(string:"https://www.mind.org.uk/information-support/types-of-mental-health-problems/")!) {
                     Text("Overall mental health.")
+                
                 }
+                
+                Spacer()
+                
+                Text("If you or someone you know is in crisis, please call the Suicide Hotline:")
+                                .padding()
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color(hue: 0.967, saturation: 0.739, brightness: 0.983))
+                            
+                            Link("Call Suicide Hotline", destination: URL(string: "tel:1-800-273-TALK")!)
+                                .font(.title)
+                                .padding()
+                                .frame(width: 350, height: 200)
             }
             .padding()
+            
         }
         .overlay(
                     RoundedRectangle(cornerRadius: 60)
-                        .stroke(Color.pink, lineWidth: 50)
+                        .stroke(Color.pink, lineWidth: 58)
                         .edgesIgnoringSafeArea(.all)
                         .overlay(
                                             RoundedRectangle(cornerRadius: 60)
-                                                .stroke(Color.pink, lineWidth: 15)
+                                                .stroke(Color.green, lineWidth: 15)
                                                 .edgesIgnoringSafeArea(.all)
                                         )
                 )
