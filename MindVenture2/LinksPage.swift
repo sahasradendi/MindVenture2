@@ -9,12 +9,55 @@ import SwiftUI
 
 struct LinksPage: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        
+        ZStack {
+            Color("Green1")
+                .edgesIgnoringSafeArea(.all)
+                
+            
 
-struct LinksPage_Previews: PreviewProvider {
-    static var previews: some View {
-        LinksPage()
+            VStack {
+                Text("Mental Health Resource Links")
+                    .multilineTextAlignment(.center)
+                    .padding()
+                    .font(.title)
+                    .bold()
+                    .foregroundColor(Color(hue: 0.967, saturation: 0.739, brightness: 0.983))
+                    .overlay (
+                        RoundedRectangle(cornerRadius: 10)
+                                            .stroke(Color.green, lineWidth: 6)
+                                    )
+            
+                
+                Link(destination: URL(string: "https://www.mayoclinic.org/diseases-conditions/anxiety/symptoms-causes/syc-20350961")!) {
+                    Text("Learn more about anxiety.")
+                    
+                }
+                
+                Link(destination: URL(string: "https://careinfo.mayoclinic.org/mh-depression?mc_id=google&campaign=18451827493&geo=9022196&kw=depression&ad=638111103999&network=g&sitetarget=&adgroup=142809945300&extension=&target=kwd-10387231&matchtype=b&device=c&account=7470347919&placementsite=enterprise&gclid=Cj0KCQjw7aqkBhDPARIsAKGa0oITnZe2v92XxWCGKmeNXUxkif4knlC4L6DyHGyzXqbIE2XoM2pPO-QaAuSzEALw_wcB")!) {
+                    Text("Learn more about depression.")
+                }
+                Link(destination: URL(string:"https://www.mind.org.uk/information-support/types-of-mental-health-problems/")!) {
+                    Text("Overall mental health.")
+                }
+            }
+            .padding()
+        }
+        .overlay(
+                    RoundedRectangle(cornerRadius: 60)
+                        .stroke(Color.pink, lineWidth: 50)
+                        .edgesIgnoringSafeArea(.all)
+                        .overlay(
+                                            RoundedRectangle(cornerRadius: 60)
+                                                .stroke(Color.pink, lineWidth: 15)
+                                                .edgesIgnoringSafeArea(.all)
+                                        )
+                )
+    }
+    
+    struct LinksPage_Previews: PreviewProvider {
+        static var previews: some View {
+            LinksPage()
+        }
     }
 }
