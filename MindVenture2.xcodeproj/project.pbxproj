@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00BF1F0A2A3A072300D3C07D /* LinksPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BF1F092A3A072300D3C07D /* LinksPage.swift */; };
 		16277B7E2A38FB54004B8220 /* MindVenture2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16277B7D2A38FB54004B8220 /* MindVenture2App.swift */; };
 		16277B802A38FB54004B8220 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16277B7F2A38FB54004B8220 /* ContentView.swift */; };
 		16277B822A38FB58004B8220 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16277B812A38FB58004B8220 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00BF1F092A3A072300D3C07D /* LinksPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksPage.swift; sourceTree = "<group>"; };
 		16277B7A2A38FB54004B8220 /* MindVenture2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindVenture2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16277B7D2A38FB54004B8220 /* MindVenture2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindVenture2App.swift; sourceTree = "<group>"; };
 		16277B7F2A38FB54004B8220 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				16277B7D2A38FB54004B8220 /* MindVenture2App.swift */,
 				16277B7F2A38FB54004B8220 /* ContentView.swift */,
+				00BF1F092A3A072300D3C07D /* LinksPage.swift */,
 				16277B812A38FB58004B8220 /* Assets.xcassets */,
 				16277B862A38FB58004B8220 /* Persistence.swift */,
 				16277B882A38FB58004B8220 /* MindVenture2.xcdatamodeld */,
@@ -145,6 +148,7 @@
 			files = (
 				16277B8A2A38FB58004B8220 /* MindVenture2.xcdatamodeld in Sources */,
 				16277B872A38FB58004B8220 /* Persistence.swift in Sources */,
+				00BF1F0A2A3A072300D3C07D /* LinksPage.swift in Sources */,
 				16277B802A38FB54004B8220 /* ContentView.swift in Sources */,
 				16277B7E2A38FB54004B8220 /* MindVenture2App.swift in Sources */,
 			);
